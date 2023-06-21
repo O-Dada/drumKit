@@ -5,9 +5,6 @@ for (let i = 0; i < drumKeys.length; i++) {
 }
 
 function clickers() {
-  // let soundFiles = new Audio('/sounds/crash.mp3');
-  // soundFiles.play();
-  // console.log(this.innerHTML);
   let buttonClicked = this.innerHTML;
   makeSound(buttonClicked);
   buttonAnimation(buttonClicked);
@@ -68,15 +65,3 @@ function buttonAnimation(currentKey) {
     activeBtn.classList.remove("pressed");
   }, 100);
 }
-
-// function Housekeeper(name, age, gender, specialty, hobbies) {
-//     this.name = name;
-//     this.age = age;
-//     this.name = gender;
-//     this.specialty = specialty;
-//     this.hobbies = hobbies;
-// }
-
-// let employee1 = new Housekeeper('Alice', 35, 'female', ['dishwashing', 'mopping', 'laundrying'], ['sporting', 'partying', 'management']);
-
-// console.log(Housekeeper);
